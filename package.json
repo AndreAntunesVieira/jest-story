@@ -1,0 +1,33 @@
+{
+  "name": "jest-story",
+  "version": "0.0.1",
+  "description": "A documentation generate bases on Jest test library",
+  "main": "index.js",
+  "files": ["index.js"],
+  "bin": {
+    "jest-story": "build.js"
+  },
+  "scripts": {
+    "build": "babel-node bin/build.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreAntunesVieira/jest-story.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreAntunesVieira/jest-story/issues"
+  },
+  "homepage": "https://github.com/AndreAntunesVieira/jest-story#readme",
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "@babel/node": "^7.5.5",
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "@babel/preset-env": "^7.5.5",
+    "prettier": "^1.18.2",
+    "uglify-js-es6": "^2.8.9"
+  }
+}
