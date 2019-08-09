@@ -33,6 +33,8 @@ export const storyCreator = mainTitle => {
           let timeout
 
           const sample = code => {
+            if (typeof code !== 'string' || !code.replace(/\n/g, 'å').match(/=/))
+              return expect(code)
             let [toExpect, expected] = code
               .replace(/\n/g, 'å')
               .replace(/=/, 'œ')
